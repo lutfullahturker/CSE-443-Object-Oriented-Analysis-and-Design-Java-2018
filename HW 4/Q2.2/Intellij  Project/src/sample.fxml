@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <Label layoutX="31.0" layoutY="95.0" text="Set the number of vertexes in Graph : ">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="numOfVertexes" layoutX="497.0" layoutY="95.0" prefHeight="25.0" prefWidth="78.0" promptText="Num" />
+        <TextField fx:id="src" alignment="CENTER" layoutX="103.0" layoutY="216.0" prefHeight="33.0" prefWidth="117.0" promptText="0" />
+        <Button fx:id="addNewEdge" layoutX="636.0" layoutY="216.0" onAction="#handleAddNewEdge" prefHeight="33.0" prefWidth="117.0" text="Add new edge" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font></Button>
+        <Button fx:id="resetButton" layoutX="575.0" layoutY="281.0" onAction="#handleResetButton" prefHeight="33.0" prefWidth="117.0" text="Reset" textAlignment="CENTER" textFill="#9e1f1f">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="solveButton" layoutX="701.0" layoutY="281.0" onAction="#handleSolveSystemButton" prefHeight="33.0" prefWidth="117.0" text="Solve System" textAlignment="CENTER" textFill="#0e538c">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <Label fx:id="mst" layoutX="298.0" layoutY="287.0" prefHeight="170.0" prefWidth="271.0" style="-fx-border-color: #000000;" textFill="#1aae2e" wrapText="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <padding>
+                <Insets left="4.0" />
+            </padding>
+        </Label>
+        <Label layoutX="709.0" layoutY="497.0" prefHeight="24.0" prefWidth="117.0" text="BulutÇizge  A.Ş." textFill="#9e9696">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="714.0" layoutY="478.0" prefHeight="24.0" prefWidth="108.0" text="Lütfullah TÜRKER" textAlignment="CENTER" textFill="#9e9696">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="101.0" layoutY="27.0" prefHeight="49.0" prefWidth="634.0" text="Welcome To Bulut Çizge A.Ş. Graph Service" textFill="#0e538c">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Label>
+        <Label fx:id="errorLabel" layoutX="39.0" layoutY="461.0" prefHeight="57.0" prefWidth="577.0" textFill="RED" wrapText="true">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="103.0" layoutY="175.0" prefHeight="33.0" prefWidth="124.0" text="Source Vertex">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="158.0" layoutY="143.0" text="Add new directed and weighted edges" textFill="#046a6b">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="matrix" layoutX="21.0" layoutY="287.0" prefHeight="170.0" prefWidth="271.0" style="-fx-border-color: #000000;" textFill="#0e538c" wrapText="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <padding>
+                <Insets left="4.0" />
+            </padding>
+        </Label>
+        <Label fx:id="equCount" layoutX="616.0" layoutY="243.0" prefHeight="24.0" prefWidth="216.0" textFill="#046a6b" wrapText="true">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+      <TextField fx:id="dst" alignment="CENTER" layoutX="275.0" layoutY="216.0" prefHeight="33.0" prefWidth="117.0" promptText="0" />
+      <TextField fx:id="wgh" alignment="CENTER" layoutX="451.0" layoutY="216.0" prefHeight="33.0" prefWidth="117.0" promptText="0" />
+      <Label layoutX="260.0" layoutY="175.0" prefHeight="33.0" prefWidth="165.0" text="Destination Vertex">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="471.0" layoutY="175.0" prefHeight="33.0" prefWidth="78.0" text="Weight">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="253.0" prefHeight="33.0" prefWidth="151.0" text="Incidence Matrix">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="253.0" prefHeight="33.0" prefWidth="216.0" text="Minimum Spanning Tree">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
