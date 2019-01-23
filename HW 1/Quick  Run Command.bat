@@ -1,0 +1,1 @@
+java -jar "Linear Solver Deluxe Executable.jar"
