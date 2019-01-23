@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+    <children>
+      <Label layoutX="31.0" layoutY="95.0" text="Set the number of equations in the system : ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="numOfEquas" layoutX="497.0" layoutY="95.0" prefHeight="25.0" prefWidth="78.0" promptText="Num" />
+      <TextField alignment="CENTER" disable="true" layoutX="31.0" layoutY="207.0" prefHeight="33.0" prefWidth="52.0" promptText="A" fx:id="x1" />
+      <TextField alignment="CENTER" disable="true" layoutX="131.0" layoutY="207.0" prefHeight="33.0" prefWidth="52.0" promptText="B" fx:id="x2" />
+      <TextField alignment="CENTER" disable="true" layoutX="231.0" layoutY="207.0" prefHeight="33.0" prefWidth="52.0" promptText="C" fx:id="x3" />
+      <TextField alignment="CENTER" disable="true" layoutX="331.0" layoutY="207.0" prefHeight="33.0" prefWidth="52.0" promptText="D" fx:id="x4" />
+      <TextField alignment="CENTER" disable="true" layoutX="431.0" layoutY="207.0" prefHeight="33.0" prefWidth="52.0" promptText="E" fx:id="x5" />
+      <TextField fx:id="y" alignment="CENTER" layoutX="575.0" layoutY="207.0" prefHeight="33.0" prefWidth="52.0" promptText="Y" />
+        <Button fx:id="addEquaButton" layoutX="676.0" layoutY="207.0" onAction="#handleAddEquaButton" prefHeight="33.0" prefWidth="117.0" text="Add Equation" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="31.0" layoutY="285.0" text="Solving Method : ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="solvingMethod" layoutX="221.0" layoutY="285.0" prefHeight="25.0" prefWidth="186.0" promptText="Choose Method" />
+      <Button fx:id="resetButton" layoutX="543.0" layoutY="281.0" onAction="#handleResetButton" prefHeight="33.0" prefWidth="117.0" text="Reset" textAlignment="CENTER" textFill="#9e1f1f">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="solveButton" layoutX="677.0" layoutY="281.0" onAction="#handleSolveSystemButton" prefHeight="33.0" prefWidth="117.0" text="Solve System" textAlignment="CENTER" textFill="#0e538c">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="results" layoutX="31.0" layoutY="324.0" prefHeight="185.0" prefWidth="577.0" textFill="#1aae2e" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <padding>
+            <Insets left="4.0" />
+         </padding>
+      </Label>
+      <Label layoutX="636.0" layoutY="495.0" prefHeight="33.0" prefWidth="199.0" text="Numerical Solutions Inc" textFill="#9e9696">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="674.0" layoutY="471.0" prefHeight="24.0" prefWidth="124.0" text="Lütfullah TÜRKER" textAlignment="CENTER" textFill="#9e9696">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="23.0" prefHeight="49.0" prefWidth="560.0" text="Welcome To Linear Solver Deluxe" textFill="#0e538c">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="211.0" prefHeight="25.0" prefWidth="22.0" text="=">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="31.0" layoutY="425.0" prefHeight="83.0" prefWidth="577.0" textFill="RED" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="177.0" text="Coefficients of Xn's and Y ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="138.0" text="Example Equation : AX1 + BX2 + CX3 + DX4 + EX5 = Y" textFill="#046a6b">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="matrix" layoutX="607.0" layoutY="324.0" prefHeight="149.0" prefWidth="227.0" style="-fx-border-color: #000000;" textFill="#0e538c" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="4.0" />
+         </padding>
+      </Label>
+      <Label fx:id="equCount" layoutX="616.0" layoutY="243.0" prefHeight="24.0" prefWidth="216.0" textFill="#046a6b" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
