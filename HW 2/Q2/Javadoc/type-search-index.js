@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"Accessory"},{"p":"<Unnamed>","l":"AutoRifle"},{"p":"<Unnamed>","l":"Dec"},{"p":"<Unnamed>","l":"FlameThrower"},{"p":"<Unnamed>","l":"Laser"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"Ora"},{"p":"<Unnamed>","l":"RocketLauncher"},{"p":"<Unnamed>","l":"Suit"},{"p":"<Unnamed>","l":"Tor"}]
